@@ -3,7 +3,7 @@ import 'dart:convert';
 
 Future<List> fetchCountries() async {
   final response = await http.get(
-      'https://raw.githubusercontent.com/samayo/country-json/master/src/country-by-capital-city.json',
+      'https://restcountries.eu/rest/v2/',
       headers: {'accept': 'application/json'});
   var convertDatatoJson = jsonDecode(response.body);
   return convertDatatoJson;
