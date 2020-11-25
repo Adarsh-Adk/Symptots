@@ -112,20 +112,10 @@ class Countries extends StatelessWidget {
                                     width: 300,
                                     height: 50,
                                     child: Center(
-                                        child: Row(
-                                          mainAxisAlignment: MainAxisAlignment.center,
-                                          children: [
-                                            Text(
-                                              "Country : ",
-                                              style:
-                                              TextStyle(fontSize: 20, color: Colors.blueAccent),
-                                            ),
-                                            SizedBox(width: 10,),
-                                            Flexible(
-                                              child: Text(data['name'],style: TextStyle(fontSize: 20, color: Colors.blueAccent,),
-                                                  ),
-                                            )
-                                          ],
+                                        child: Text(
+                                          "Country : ${data['name']}",
+                                          style:
+                                          TextStyle(fontSize: 20, color: Colors.blueAccent),
                                         ))),
                           Container(
                                     width: 300,
