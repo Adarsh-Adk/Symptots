@@ -113,7 +113,7 @@ class Countries extends StatelessWidget {
                                     height: 50,
                                     child: Center(
                                         child: Text(
-                                          "Country : ${data['name']}",
+                                          "Country : ${data['name']}",textAlign: TextAlign.center,
                                           style:
                                           TextStyle(fontSize: 20, color: Colors.blueAccent),
                                         ))),
